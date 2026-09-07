@@ -3,6 +3,10 @@
 A responsive, one-page portfolio prepared for GitHub Pages. The site uses locally optimized
 poster frames and opens the original public Google Drive videos in an accessible player.
 
+## Live site
+
+[moralesjohnray01212002.github.io/john-ray-morales-portfolio](https://moralesjohnray01212002.github.io/john-ray-morales-portfolio/)
+
 ## Included
 
 - 12 selected videos across AI Animation, UGC, French UGC, and VSL/DTC
@@ -27,12 +31,9 @@ Then open `http://localhost:8000`.
 - Review the short biography and project labels.
 - Confirm that the Google Drive folder remains shared with “Anyone with the link.”
 
-## Publish with GitHub Pages
+## GitHub Pages deployment
 
-1. Create a new public GitHub repository.
-2. Upload this project or push the `main` branch.
-3. In **Settings → Pages**, choose **GitHub Actions** as the source.
-4. The included workflow publishes `dist/` after each update to `main`.
+In **Settings → Pages**, choose **GitHub Actions** as the source once. The included workflow
+publishes `dist/` automatically after each update to `main`.
 
-GitHub Pages hosting is free for public repositories. A custom domain is optional; the standard
-address will be `https://YOUR-USERNAME.github.io/REPOSITORY-NAME/`.
+GitHub Pages hosting is free for this public repository. A custom domain is optional.
