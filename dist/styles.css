@@ -881,9 +881,7 @@ select {
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: var(--radius);
   color: var(--paper);
-  background:
-    radial-gradient(circle at 76% 14%, rgba(89, 103, 255, 0.34), transparent 42%),
-    linear-gradient(145deg, #1a1e27 0%, #11141b 54%, #090a0d 100%);
+  background: #0d131e;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.34);
   font-family: "SFMono-Regular", Consolas, monospace;
   font-size: 0.72rem;
@@ -896,8 +894,8 @@ select {
   content: "";
   pointer-events: none;
   background:
-    linear-gradient(180deg, transparent 52%, rgba(5, 6, 9, 0.42)),
-    linear-gradient(90deg, rgba(200, 255, 77, 0.08), transparent 38%);
+    linear-gradient(180deg, rgba(5, 7, 12, 0.32) 0%, transparent 24%, transparent 58%, rgba(5, 6, 9, 0.62) 100%),
+    linear-gradient(90deg, rgba(8, 10, 15, 0.2), transparent 42%);
 }
 
 .about-label {
@@ -910,14 +908,13 @@ select {
 
 .about-portrait {
   position: absolute;
-  bottom: -0.35rem;
-  left: 50%;
+  inset: 0;
   z-index: 2;
-  width: 82%;
+  width: 100%;
   max-width: none;
-  height: auto;
-  transform: translateX(-50%);
-  filter: drop-shadow(0 1.8rem 2.6rem rgba(9, 10, 12, 0.28));
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .about-copy h2 {
