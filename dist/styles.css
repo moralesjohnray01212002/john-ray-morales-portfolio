@@ -864,6 +864,7 @@ select {
   display: grid;
   grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
   gap: clamp(3rem, 10vw, 11rem);
+  align-items: start;
   border-top: 1px solid var(--line);
 }
 
@@ -872,7 +873,9 @@ select {
   isolation: isolate;
   display: flex;
   align-items: flex-start;
-  min-height: 26rem;
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 3 / 4;
   padding: 1.2rem;
   overflow: hidden;
   border-radius: var(--radius);
@@ -902,10 +905,10 @@ select {
 
 .about-portrait {
   position: absolute;
-  bottom: -0.6rem;
+  bottom: -0.35rem;
   left: 50%;
   z-index: 2;
-  width: min(132%, 34rem);
+  width: 82%;
   max-width: none;
   height: auto;
   transform: translateX(-50%);
@@ -1207,7 +1210,7 @@ select {
   }
 
   .about-index {
-    min-height: 22rem;
+    min-height: 0;
   }
 
   .site-footer {
@@ -1769,7 +1772,7 @@ body.has-modal {
   }
 
   .about-index {
-    min-height: 22rem;
+    min-height: 0;
   }
 }
 
