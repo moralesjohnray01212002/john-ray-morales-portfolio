@@ -72,7 +72,7 @@ filterButtons.forEach((button) => {
     workCards.forEach((card) => {
       const isVisible = selectedFilter === "all" || card.dataset.category === selectedFilter;
       card.hidden = !isVisible;
-      if (isVisible) count += 1;
+      if (isVisible) count += Number.parseInt(card.dataset.itemCount || "1", 10);
     });
 
     if (visibleCount) visibleCount.textContent = String(count).padStart(2, "0");

@@ -1576,6 +1576,47 @@ select {
   line-height: 1.45;
 }
 
+.hook-set-mark {
+  position: absolute;
+  bottom: 5rem;
+  left: 0.9rem;
+  z-index: 2;
+  color: rgba(244, 245, 240, 0.78);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.09em;
+  line-height: 0.9;
+}
+
+.hook-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.hook-buttons button {
+  min-height: 2.15rem;
+  padding: 0.42rem 0.55rem;
+  color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  background: rgba(255, 255, 255, 0.035);
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 750;
+  text-align: left;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.hook-buttons button:hover,
+.hook-buttons button:focus-visible {
+  color: var(--ink);
+  border-color: var(--acid);
+  background: var(--acid);
+}
+
 .archive-cta {
   display: flex;
   align-items: center;
