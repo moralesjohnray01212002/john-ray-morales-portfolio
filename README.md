@@ -9,9 +9,9 @@ poster frames and opens the original public Google Drive videos in an accessible
 
 ## Included
 
-- 12 selected videos across AI Animation, UGC, French UGC, and VSL/DTC
+- 20 selected videos across AI Animation, UGC, localized UGC, and VSL/DTC
 - Filterable project gallery
-- Google Drive video player and links to the full 31-video portfolio
+- Google Drive video player and links to the full 39-video portfolio
 - Responsive navigation, motion preferences, keyboard focus states, and mobile layouts
 - GitHub Pages deployment workflow
 
