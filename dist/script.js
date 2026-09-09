@@ -58,6 +58,16 @@ const filterButtons = document.querySelectorAll("[data-filter]");
 const workCards = document.querySelectorAll("[data-category]");
 const visibleCount = document.querySelector("[data-visible-count]");
 
+const countVisibleVideos = () =>
+  Array.from(workCards).reduce(
+    (total, card) => total + (card.hidden ? 0 : Number.parseInt(card.dataset.itemCount || "1", 10)),
+    0
+  );
+
+if (visibleCount) {
+  visibleCount.textContent = String(countVisibleVideos()).padStart(2, "0");
+}
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const selectedFilter = button.dataset.filter;
