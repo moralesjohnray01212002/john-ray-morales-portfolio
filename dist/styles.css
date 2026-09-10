@@ -266,27 +266,31 @@ select {
   font-size: clamp(4.4rem, 9.3vw, 9.1rem);
 }
 
-.hero h1 span {
-  display: block;
+.hero h1 .hero-pause {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.12em;
   width: fit-content;
-  color: rgba(244, 245, 240, 0.88);
-  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
-  font-size: 0.91em;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.06em;
-  line-height: 0.96;
+  color: var(--acid);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 0.82em;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
-.hero h1 span::after {
-  display: block;
-  width: 1.1em;
-  height: 0.055em;
-  margin: 0.16em 0 0 0.08em;
-  border-radius: 999px;
-  content: "";
-  background: var(--acid);
+.hero h1 .hero-pause small {
+  margin: 0 0 0.28em 0.08em;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.14em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: lowercase;
 }
 
 .hero-intro {
