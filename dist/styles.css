@@ -267,11 +267,9 @@ select {
 }
 
 .hero h1 .hero-pause {
-  display: flex;
-  align-items: flex-end;
-  gap: 0.12em;
+  display: block;
   width: fit-content;
-  color: var(--acid);
+  color: rgba(244, 245, 240, 0.92);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 0.82em;
   font-style: normal;
@@ -282,15 +280,9 @@ select {
   white-space: nowrap;
 }
 
-.hero h1 .hero-pause small {
-  margin: 0 0 0.28em 0.08em;
-  color: var(--muted);
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.14em;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  line-height: 1;
-  text-transform: lowercase;
+.hero h1 .hero-pause strong {
+  color: var(--acid);
+  font: inherit;
 }
 
 .hero-intro {
